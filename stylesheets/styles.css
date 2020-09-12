@@ -1,0 +1,441 @@
+/*Declaring mixin for all devices with adaptbility of adding custom device*/
+/* Setting the width of the devices as variables*/
+/* line 4, ../sass/styles.scss */
+#sidefilter .container {
+  background-color: white;
+  padding-bottom: 5vh;
+}
+/* line 7, ../sass/styles.scss */
+#sidefilter .container hr {
+  height: 2px;
+}
+@media (min-width: 200px) {
+  /* line 7, ../sass/styles.scss */
+  #sidefilter .container hr {
+    margin: -1rem 28% 1rem 28%;
+  }
+}
+@media (min-width: 576px) {
+  /* line 7, ../sass/styles.scss */
+  #sidefilter .container hr {
+    margin: -1rem 0% 1rem 0%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 7, ../sass/styles.scss */
+  #sidefilter .container hr {
+    margin: -1rem 4% 1rem 4%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 7, ../sass/styles.scss */
+  #sidefilter .container hr {
+    margin: -1rem 16% 1rem 16%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 7, ../sass/styles.scss */
+  #sidefilter .container hr {
+    margin: -1rem 14% 1rem 14%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+  /* line 7, ../sass/styles.scss */
+  #sidefilter .container hr {
+    margin: -1rem 7% 1rem 7%;
+  }
+}
+
+/* line 31, ../sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 36, ../sass/styles.scss */
+body {
+  font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+/* line 40, ../sass/styles.scss */
+h1, h3 {
+  font: normal 24px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/*-----------------
+    The Header
+------------------*/
+/* line 48, ../sass/styles.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  z-index: 100;
+  background-color: #282b2c;
+  padding: 20px 40px;
+  color: #fff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 60, ../sass/styles.scss */
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 65, ../sass/styles.scss */
+header h2.tzine {
+  float: right;
+  opacity: 0.9;
+}
+/* line 69, ../sass/styles.scss */
+header h2.tzine:hover {
+  opacity: 1;
+}
+/* line 73, ../sass/styles.scss */
+header h2.tzine a {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 3px;
+  background-color: #5895DB;
+}
+
+@media (max-width: 500px) {
+  /* line 85, ../sass/styles.scss */
+  header {
+    padding: 20px 15px;
+  }
+  /* line 88, ../sass/styles.scss */
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+/*-----------------
+    Main Content
+------------------*/
+/* line 99, ../sass/styles.scss */
+.main-content {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 125px auto 60px;
+  padding: 0 40px;
+}
+/* line 105, ../sass/styles.scss */
+.main-content h3 {
+  font-size: 28px;
+  color: #5a96b9;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  /* line 113, ../sass/styles.scss */
+  .main-content {
+    margin: 45px auto;
+    padding: 0 25px;
+  }
+}
+/*-------------------
+    All Products Page
+--------------------*/
+/*	Filter Form	*/
+/* line 125, ../sass/styles.scss */
+.filters {
+  box-sizing: border-box;
+  padding: 5px 30px 30px;
+  width: 190px;
+  background-color: #FFF;
+  border: 1px solid #DBE3E7;
+  border-radius: 3px;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  text-align: left;
+  color: #2B2E31;
+  opacity: 0;
+  pointer-events: none;
+}
+/* line 139, ../sass/styles.scss */
+.filters .filter-criteria {
+  display: block;
+  margin: 10px 0 10px;
+}
+/* line 144, ../sass/styles.scss */
+.filters span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* line 152, ../sass/styles.scss */
+.filters label {
+  display: block;
+  line-height: 1.4;
+  font-size: 15px;
+}
+/* line 157, ../sass/styles.scss */
+.filters label input {
+  margin-right: 10px;
+}
+/* line 162, ../sass/styles.scss */
+.filters button {
+  border-radius: 2px;
+  background-color: #4BC34B;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  width: 95px;
+  height: 32px;
+  margin-top: 10px;
+}
+
+/*	Products List	*/
+/* line 179, ../sass/styles.scss */
+.all-products h3 {
+  opacity: 0;
+}
+
+/* line 183, ../sass/styles.scss */
+.products-list {
+  list-style: none;
+  margin-left: 225px;
+  max-width: 1500px;
+  text-align: center;
+  padding: 0;
+  opacity: 0;
+  font-size: 0;
+}
+
+/* line 194, ../sass/styles.scss */
+.all-products.visible .products-list, .all-products.visible .filters, .all-products.visible h3 {
+  opacity: 1;
+  transition: 1s;
+  pointer-events: auto;
+}
+
+/* line 202, ../sass/styles.scss */
+.products-list > li {
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  text-align: left;
+  font: normal 12px sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #dbe3e7;
+  border-radius: 3px;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+  margin: 0 12px 14px 0;
+  padding: 25px;
+}
+/* line 217, ../sass/styles.scss */
+.products-list > li.hidden {
+  opacity: 0.2;
+  pointer-events: none;
+}
+/* line 223, ../sass/styles.scss */
+.products-list .product-photo {
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px 8px #f3f3f3 inset;
+  width: 275px;
+  margin-bottom: 25px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+/* line 233, ../sass/styles.scss */
+.products-list h2 {
+  display: block;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  margin: 0;
+}
+/* line 242, ../sass/styles.scss */
+.products-list h2 a {
+  text-decoration: none;
+  color: #2B2E31;
+}
+/* line 248, ../sass/styles.scss */
+.products-list .product-description {
+  margin-top: 20px;
+  color: #5d5d5d;
+  font-size: 14px;
+  line-height: 1.45;
+  white-space: normal;
+  max-width: 260px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+/* line 258, ../sass/styles.scss */
+.products-list .product-description li {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 262, ../sass/styles.scss */
+.products-list .product-description li:first-child {
+  display: block;
+}
+/* line 266, ../sass/styles.scss */
+.products-list .product-description li span {
+  font-weight: bold;
+}
+/* line 272, ../sass/styles.scss */
+.products-list button {
+  border-radius: 2px;
+  background-color: #87bae1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  width: 95px;
+  height: 32px;
+}
+/* line 285, ../sass/styles.scss */
+.products-list .product-price {
+  float: right;
+  color: #4e4e4e;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 6px;
+  margin: 0;
+}
+/* line 294, ../sass/styles.scss */
+.products-list .highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: 0.4s;
+}
+/* line 305, ../sass/styles.scss */
+.products-list > li:hover .highlight {
+  opacity: 1;
+}
+
+/* The product image */
+/* The product name */
+/* Product description */
+/* Price and order button */
+/* Making the list responsive */
+@media (max-width: 800px) {
+  /* line 322, ../sass/styles.scss */
+  .products-list .product-photo {
+    width: 225px;
+  }
+  /* line 326, ../sass/styles.scss */
+  .products-list .product-description {
+    max-width: 225px;
+  }
+}
+/*---------------------------
+    Single Product Page
+----------------------------*/
+/* line 336, ../sass/styles.scss */
+.single-product {
+  z-index: 100;
+}
+
+/* line 340, ../sass/styles.scss */
+.overlay {
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #282b2c;
+  transition: 0.6s;
+  z-index: 100;
+}
+
+/* line 351, ../sass/styles.scss */
+.single-product.visible .overlay {
+  height: 100%;
+}
+
+/* line 355, ../sass/styles.scss */
+.preview-large {
+  box-sizing: border-box;
+  width: 760px;
+  height: 550px;
+  position: fixed;
+  left: 50%;
+  margin-left: -375px;
+  top: 50%;
+  margin-top: -275px;
+  pointer-events: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  z-index: 102;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* line 372, ../sass/styles.scss */
+.single-product.visible .preview-large {
+  opacity: 1;
+  transition: 1.4s;
+  pointer-events: auto;
+}
+
+/* line 379, ../sass/styles.scss */
+.preview-large h3 {
+  margin-top: 20px;
+}
+/* line 383, ../sass/styles.scss */
+.preview-large img {
+  width: 100%;
+  height: 280px;
+  border-bottom: 3px solid #efefef;
+  border-radius: 5px 5px 0 0;
+}
+/* line 390, ../sass/styles.scss */
+.preview-large p {
+  line-height: 23px;
+  padding: 50px 45px;
+}
+
+/* line 396, ../sass/styles.scss */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 28px;
+  color: #555;
+  cursor: pointer;
+}
+
+/*---------------------------
+    Error Page
+----------------------------*/
+/* line 409, ../sass/styles.scss */
+.error {
+  opacity: 0;
+  transition: 0.6s;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+}
+/* line 418, ../sass/styles.scss */
+.error.visible {
+  opacity: 1;
+}
+/* line 422, ../sass/styles.scss */
+.error h3 {
+  font-size: 40px;
+}

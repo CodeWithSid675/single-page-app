@@ -1,0 +1,57 @@
+/*Declaring mixin for all devices with adaptbility of adding custom device*/
+@import 'variables';
+// Small devices
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+  }
+  
+  // Small devices
+  @mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+  }
+  
+  // Medium devices
+  @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+  }
+  
+  // Large devices
+  @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+  }
+  
+  // Extra large devices
+  @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+  }
+  
+  // Custom min devices
+  @mixin custom-min($screen) {
+      @media (min-width: $screen+'px') {
+          @content;
+      }
+  }
+  
+  // Custom max devices
+  @mixin custom-max($screen) {
+      @media (max-width: $screen+'px') {
+          @content;
+      }
+  }
+  
+  // Custom min max width devices
+  @mixin custom-min-max($screen-min , $screen-max) {
+    @media (min-width: #{$screen-min + 'px'}) and (max-width: #{$screen-max + 'px'}) {
+        @content;
+    }
+  }
